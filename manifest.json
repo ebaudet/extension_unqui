@@ -4,7 +4,9 @@
     "description": "This extension changes the audio player to add speed options, also add a download button.",
     "version": "1.0",
     "icons": {
-		"16": "img/icon.png"
+		"16": "img/icon16.png",
+		"32": "img/icon32.png",
+		"128": "img/icon128.png"
 	},
 	"content_scripts": [{
 		"matches": ["http://presencial.uvq.edu.ar/*", "https://presencial.uvq.edu.ar/*"],
