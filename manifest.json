@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Player Universidad Nacional de Quilmes",
+    "description": "This extension changes the audio player to add speed options, also add a download button.",
+    "version": "1.0",
+    "icons": {
+		"16": "img/icon.png"
+	},
+	"content_scripts": [{
+		"matches": ["http://presencial.uvq.edu.ar/*", "https://presencial.uvq.edu.ar/*"],
+		"js": ["js/lib/jquery-3.6.0.min.js", "js/content.js"]
+	}],
+	"permissions": [
+		"https://presencial.uvq.edu.ar/"
+	]
+  }
