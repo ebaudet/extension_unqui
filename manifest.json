@@ -10,7 +10,8 @@
 	},
 	"content_scripts": [{
 		"matches": ["http://presencial.uvq.edu.ar/*", "https://presencial.uvq.edu.ar/*"],
-		"js": ["js/lib/jquery-3.6.0.min.js", "js/content.js"]
+		"js": ["js/lib/jquery-3.6.0.min.js", "js/content.js"],
+        "css": ["css/style.css"]
 	}],
 	"permissions": [
 		"https://presencial.uvq.edu.ar/"
