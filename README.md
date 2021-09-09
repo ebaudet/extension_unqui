@@ -1,4 +1,5 @@
-# extension_unqui
+# Chrome Extension : Player Universidad Nacional de Quilmes
+
 Extension para simplificar la utilización del intranet de Unqui
 
 ![screenshot](img/screenshot.png)
