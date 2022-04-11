@@ -1,11 +1,11 @@
-mediaplugin = $(".mediaplugin_videojs");
-
-for (var i = 0; i < mediaplugin.length; i++) {
-    url = $('audio > source', mediaplugin[i]).attr('src');
-    $(mediaplugin[i]).append(function(){
-        $(this).append("<div><a href='" + url + "' class='btn btn-secondary'>descargar el audio</a></div>");
-    });
-    $('audio', mediaplugin[i]).attr('data-setup', '{ "playbackRates": [0.5, 1, 1.5, 2] }');
-}
+mp = $(".mediaplugin_videojs");
+mp.map(function (index, value) {
+    url = $('audio > source', value).attr('src');
+    $(value).append(function(){
+        $(this).append("<div><a href='" + url + "' class='btn btn-secondary'>Descargar el audio</a></div>");
+    })
+    $('audio', value).attr('data-setup', '{ "playbackRates": [0.5, 1, 1.5, 2] }');
+});
 
 $('.content-alignment-container').removeClass('no-overflow');
+$('#region-main').css('overflow-x', 'visible');
